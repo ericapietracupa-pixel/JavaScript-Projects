@@ -26,3 +26,12 @@ document.write("<br>"); // This line writes an HTML line break to the document f
 
 // This line concatenates the two string variables 'Sent1' and 'Sent2' and writes the result to the document.
 document.write(Sent1 + Sent2); 
+
+// This line assigns the 'showDate' function to the 'onclick' event of the button with id 'dateBtn', so that when the button is clicked, the current date and time will be displayed.
+document.getElementById("dateBtn").onclick = showDate; 
+
+function showDate() {
+    var currentDate = new Date(); // This line creates a new Date object that contains the current date and time.
+    // This line updates the inner HTML of the element with id 'dateDisplay' to show the current date and time.
+    document.getElementById("dateDisplay").innerHTML = "Current Date and Time: " + currentDate; 
+}
