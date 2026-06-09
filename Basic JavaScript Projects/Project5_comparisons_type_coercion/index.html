@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project5_comparisons_type_coercion Assignment</title>
+        <script src="JS/main.js"></script> <!-- This line includes the external JavaScript file 'main.js' -->
+    </head>
+    <body>
+        <h1>JavaScript Comparisons and Type Coercion</h1>
+        <p>This is an example of JavaScript comparisons and type coercion.</p>
+        <p id="Type_Of" onclick="Type_Of()">Click here to see the type of variable x</p>
+
+        <!-- The following paragraphs will display the values of y and z when clicked, demonstrating the concept of Infinity and Negative Infinity in JavaScript -->
+        <p id="Infinity" onclick="Show_Infinity()">Click here to see the value of y</p>
+        <p id="Negative_Infinity" onclick="Show_Negative_Infinity()">Click here to see the value of z</p>
+
+        <!-- Boolean logic -->
+        <input type="text" id="Num1Compare" placeholder="Enter a number">
+        <span>&gt;</span> <!-- This is the greater than symbol -->
+        <input type="text" id="Num2Compare" placeholder="Enter a number">
+        <button onclick="Boolean_Logic()">Compare</button>
+        <br>
+        <span>Result:</span>
+        <span id="Boolean_Logic_Result"></span>
+
+
+        <!-- The following paragraphs will display the results of the equality and inequality comparisons when clicked -->
+
+        <p id="EqualsLogic" onclick="Equals_Logic()">Click here to see the result of 10 == 10</p>
+
+        <p id="NotEqualsLogic" onclick="Not_Equals_Logic()">Click here to see the result of 10 == 5</p>
+
+
+        <!-- The following paragraphs will display the results of the strict equality comparisons when clicked -->
+
+        <p id="StrictEqualsLogic1" onclick="Strict_Equals_Logic(10, 10, this)">Click here to see the result of 10 === 10</p>
+
+        <p id="StrictEqualsLogic2" onclick="Strict_Equals_Logic(10, 'dog', this)">Click here to see the result of 10 === "dog"</p>
+
+        <p id="StrictEqualsLogic3" onclick="Strict_Equals_Logic(10, '10', this)">Click here to see the result of 10 === "10"</p>
+
+        <p id="StrictEqualsLogic4" onclick="Strict_Equals_Logic(10, 15, this)">Click here to see the result of 10 === 15</p>
+
+        <!-- The following paragraphs will display the results of the logical AND and OR operations when clicked -->
+
+        <p id="AndLogic1" onclick="And_Logic(15, 10, 7, 5, this)">Click here to see the result of (15 > 10) && (7 > 5)</p>
+
+        <p id="AndLogic2" onclick="And_Logic(15, 10, 5, 7, this)">Click here to see the result of (15 > 10) && (5 > 7)</p>
+
+        <p id="OrLogic1" onclick="Or_Logic(15, 10, 5, 7, this)">Click here to see the result of (15 > 10) || (5 > 7)</p>
+
+        <p id="OrLogic2" onclick="Or_Logic(10, 15, 5, 7, this)">Click here to see the result of (10 > 15) || (5 > 7)</p>
+
+        <!-- The following paragraphs will display the results of the logical NOT operations when clicked -->
+
+        <p id="NotLogic1" onclick="Not_Logic(10, 15, this)">Click here to see the result of !(10 < 15)</p>
+        
+        <p id="NotLogic2" onclick="Not_Logic(15, 10, this)">Click here to see the result of !(15 < 10)</p>
+
+    </body>
+</html>
