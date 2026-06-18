@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link to the Google API jQuery files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <script>
+        // when document (website) is finished loading appends string with 
+        // html elements to create the body of the page
+        $(document).ready(function(){
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            // Sets paragraph with id of 2 text color to red
+            $("#2").css({"color":"red"});
+            // Hides h1 elements when paragraph with id of 3 is 
+            // clicked on with slow animation
+            $("#3").click(function() {
+                console.log("You clicked a paragraph!");
+                $("h1").hide("slow");
+            });
+            // Shows h1 elements when paragraph with id of 1 is 
+            // hovered over with fast animation
+            $("#1").hover(function() {
+                $("h1").show("fast");
+            });
+        });
+    </script>
+</html>
