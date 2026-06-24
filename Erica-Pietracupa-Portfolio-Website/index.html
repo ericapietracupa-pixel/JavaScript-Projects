@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Erica Pietracupa's Portfolio</title>
+    <link rel="shortcut icon" type="img/jpg" href="icons/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+</head>
+
+<!--Body-->
+
+<body class="Background">
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <!-- New section added -->
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="images/video/Typing.mp4" type="video/mp4">
+            <!--Display message if video fails to play-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Erica Pietracupa's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                    <br>No playwrite, no stage director, no emperor, however powerful, has ever exercised such absolute
+                    authority to arrange a stage or
+                    <br>field of battle and to command such unswervingly dutifyl actors or troops.</q>
+                <br> -Joseph Weizenbaum
+                <br>
+                <br> My name is Erica Pietracupa. Wecome to my portfolio website. On it, I will tell you about my
+                background and experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow section added -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/my_picture.jpg" alt="Picture of myself">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!-- Slide 2 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg"
+                        alt="HTML, CSS, and JS logos">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,
+                    </div>
+                </div>
+                <!-- Slide 3 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                    <div class="text">the popular programming language Python,</div>
+                </div>
+                <!-- Slide 4 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                </div>
+                <!-- Slide 5 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo">
+                    <div class="text">back end development, databases and SQL.</div>
+                </div>
+                <!-- Slide 6 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/pexels-markus-winkler.jpg"
+                        alt="CONTACT in Scrabble Letters">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <img src="images/pexels-markusspiske.jpg" alt="Zoom-in of a computer screen with programming code">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a software developer who loves to code! With my roughly 8 years of experience in the field, my
+                passion for problem solving and finding solutions to many different issues, I am always looking for my
+                next challenge to overcome!
+                <br>
+                <br>I am a graduate of <a href="https://www.stlawrencecollege.ca/" target="_blank">St. Lawrence
+                    College</a>’s Computer and Programmer Analyst Course (2010) and recent graduate of <a
+                    href="https://www.academyoflearning.com/" target="_blank">Academy of Learning</a>'s Software and Web
+                Developer
+                course (2027). I am trained and experienced in the following web and programming languages: HTML, CSS,
+                Python and more.
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()"
+                    class="contact">Contact</a> me below!
+
+            </p>
+        </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/ericapietracupa-pixel" target="_blank">My GitHub</a></p>
+            </p>
+            <br>
+            <h3>Recent Projects:</h3>
+            <ul>
+                <li><a href="https://github.com/ericapietracupa-pixel/HTML-and-CSS-Projects/tree/main/Academy-Cinemas" target="_blank">Accademy Cinemas</a> (HTML, CSS & Bootstrap)</li>
+                <li><a href="https://github.com/ericapietracupa-pixel/JavaScript-Projects/tree/main/Calculator" target="_blank">Calculator</a> (JavaScript, HTML & CSS)</li>
+                <li><a href="https://github.com/ericapietracupa-pixel/HTML-and-CSS-Projects/tree/main/One-Page-Website" target="_blank">One Page Website</a> (HTML, CSS and JavaScript)</li>
+                <li><a href="https://github.com/ericapietracupa-pixel/HTML-and-CSS-Projects/tree/main/Simple-Recipes" target="_blank">Simple Recipes</a> (HTML & CSS)</li>
+                <li><a href="https://github.com/ericapietracupa-pixel/HTML-and-CSS-Projects/tree/main/The-Pet-Shop-Website" target="_blank">The Pet Shop Website</a> (HTML & CSS)</li>
+                <li><a href="https://github.com/ericapietracupa-pixel/JavaScript-Projects/tree/main/TicTacToe" target="_blank">Tic Tac Toe</a> (JavaScript, HTML & CSS)</li>
+                <li><a href="http://github.com/ericapietracupa-pixel/JavaScript-Projects/tree/main/todo_app" target="_blank">To Do Application</a> (JavaScript, HTML & CSS)</li>
+            </ul>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <a href="https://github.com/ericapietracupa-pixel" target="_blank">
+                <img src="images/GitHub.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xredjkeb" method="POST" class="form-container">
+                <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" placeholder="Type your name here" id="name" name="name" required>
+                <label for="phone"><strong>Phone:</strong></label>
+                <input type="text" placeholder="Type your phone number here" id="phone" name="phone">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="text" placeholder="Type your email address here" id="email" name="email" required>
+                <label for="message"><strong>Message:</strong></label>
+                <input type="text" placeholder="Type your message here" id="message" name="message">
+                <br><br>
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <div>
+            <p class="center">&copy;2026 Erica Pietracupa. All rights reserved.</p>
+            <!-- LinkedIn Footer Link Container -->
+            <div class="center">
+                <a href="https://www.linkedin.com/in/erica-pietracupa-4150b118/" target="_blank"
+                    rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn">
+                    <svg xmlns="http://w3.org" viewBox="0 0 24 24" class="linkedin-icon">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
