@@ -60,8 +60,8 @@ p {
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2vw; /* Relative font sizing equal to 2% of the viewport width */
-    padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
-    padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
+    padding-left: 1.4vw; /* Relative padding equal to 1.4% of the viewport width */
+    padding-right: 1.4vw; /* Relative padding equal to 1.4% of the viewport width */
 }
 
 /* List elements */
@@ -359,10 +359,26 @@ footer {
 
 .Column_2 {
     float: left;
+    display: flex;
+    place-items: center;
     width: 50%;
     padding: 1.6%;
     height: 600px;
     background-color: rgb(51, 6, 94);
+}
+
+/* Ensure the anchor behaves as a container */
+.anchorWithImg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Force the image to scale down instead of overflowing */
+.imgWithinAnchor {
+  display: flex;
+  max-width: 100%;
+  height: auto; /* Maintains original aspect ratio */
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -490,40 +506,22 @@ button:hover, .form-container .btn:hover {
 
 /***** Media Query Section *****/
 /*Media rules for paragraph font size for different screen sizes*/
-@media screen and (max-width: 527px) {
+@media screen and (max-width: 660px) {
     p {
-        font-size: 3.75vw;
+        font-size: 3vw;
     }
 }
 
-@media screen and (min-width: 528px) and (max-width: 660px) {
-    p {
-        font-size: 3.5vw;
-    }
-}
-
-@media screen and (min-width: 661px) and (max-width: 799px) {
-    p {
-        font-size: 2.75vw;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 924px) {
+@media screen and (min-width: 661px) and (max-width: 924px) {
     p {
         font-size: 2.5vw;
     }
 }
 
-@media screen and (min-width: 925px) and (max-width: 1050px) {
-    p {
-        font-size: 2.25vw;
-    }
-}
-
-@media screen and (min-width: 1051px) and (max-width: 1310px) {
+@media screen and (min-width: 925px) and (max-width: 1310px) {
     p {
         font-size: 2vw;
-    } 
+    }
 }
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
